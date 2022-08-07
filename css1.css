@@ -1,0 +1,519 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+}
+#menu{
+    width: 100%;
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+#menu>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0px 24px;
+    line-height: 46.5px;
+    text-transform: uppercase;
+}
+#menu > ul > li > label{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0px 24px;
+    line-height: 46.5px;
+    text-transform: uppercase;
+}
+#menu > ul > li{
+    display: inline-block;
+    position: relative;
+}
+#menu .nav-menu{
+    position:absolute;
+    background-color: #fff;
+    box-shadow:  0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    min-width: 160px;
+    top: 100%;
+    left: 0px;
+    display:none;
+}
+#menu .nav-menu li a{
+    color: black;
+    text-decoration: none;
+    padding:0px 16px;
+    display: block;
+    text-transform: uppercase;
+    line-height: 38.5px;
+}
+.nav-menu, #menu{
+    list-style-type: none;
+}
+#menu >ul> li:hover> a {
+    background-color: gainsboro;
+    color: black;
+}
+#menu >ul> li:hover>label {
+    background-color: gainsboro;
+    color: black;
+}
+#menu >ul > li:first-child{
+    display: inline-block;
+}
+#menu ul li:hover .nav-menu{
+    display: block;
+}
+#menu .nav-menu li:hover a{
+    background-color: #ccc;
+}
+#menu ul{
+    display: inline-block;
+}
+#menu .bars {
+    line-height: 46.5px;
+    float: right;
+    display: inline-block;
+    font-size: 17px;
+    padding: 0px 24px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    cursor: pointer;
+}
+#menu .bars:hover{
+background-color: #ccc;
+color: #000;
+}
+#menu .button{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0px 24px;
+    line-height: 46.5px;
+}
+#menu .button{
+    float: right;
+}
+#menu .button:hover{
+background-color: red;
+}
+
+#header{
+    margin-top: 46.5px;
+    background-image: url(https://www.w3schools.com/w3images/ny.jpg);
+    padding-top:50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    position: relative;
+}
+.chu{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 32px 16px;
+}
+#nav_son{
+    display: none;
+}
+#header .chu h3{
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 24px ;
+    text-shadow: 0px 0px 2px black;
+}
+#content .noidung1{
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    text-align: center;
+
+}
+#content .noidungchu{
+    text-align: center;
+}
+
+
+#content .chunghien{
+    margin: 15px 0px;
+    opacity: 0.5;
+}
+#content .h2{
+    margin: 25px 0px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+#content .noidungchinh{
+    margin: 15px 0px;
+}
+#content .noidungchinh{
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .khunganh{
+    width: 100%;
+    display: flex;
+    padding: 32px 0px;
+}
+#content .khunganh .anh1{
+    width: 33%;
+    height: auto;
+    float: left;
+}
+#content .khunganh img{
+    width: 60%;
+    height: auto;
+    border-radius: 5px;
+}
+#content .khunganh .tieude{
+    text-align: center;
+    margin: 15px 0px;
+}
+h4.tieude {
+    padding: 15px 0px;
+}
+
+#content .bg-black{
+    background-color: #000;
+}
+#content .noidung2{
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+.text-white{
+    color: #fff !important;
+}
+#content .thang{
+    list-style-type: none;
+    background-color: #fff;
+    margin-top: 35px;
+}
+#content .thang li{
+    color: #757575;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+
+}
+#content .noidung2 .do{
+    padding:5px;
+    background-color: #f44336;
+    color: white;
+   margin-left: 16px;
+}
+#content .noidung2 .den{
+    padding: 0px 8px 0px 8px;
+    background-color: #000;
+    color: white;
+    float: right;
+    border-radius: 50%;
+    line-height: 25.6px;
+    margin-top: -4px;
+    margin-right: 16px;
+    text-align: center;
+}
+#content .card-group{
+    padding: 32px 0px;
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+#content .card{
+    width: 33.33%;
+    height: auto;
+    padding:  0px  8px;
+    float: left;
+    margin-bottom: 16px;
+}
+#content .card-group img{
+    width: 100%;
+    vertical-align: middle;
+}
+#content .card-group img:hover{
+   opacity: 0.6;
+}
+#content .card-body{
+    background-color: #fff;
+    padding: 0px 16px;
+}
+#content .button{
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    display:inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+#content .time{
+    margin: 15px 0px;
+    opacity: 0.6;
+}
+#content .text{
+    margin: 15px 0px;
+    line-height: 1.5;
+}
+#content .button:hover{
+    background-color: #ccc;
+    color: black;
+}
+.container-modal {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    background-color: rgb(0 ,0, 0,  0.3);
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    display: none;
+   
+}
+.modal{
+    width:900px;
+    max-width:calc(100% - 32px);
+    height: auto;
+    background-color: white!important;
+    animation: chuyendong 0.6s ease;
+
+}
+.header-modal{
+    padding: 32px 0px;
+    background-color: aquamarine;
+    position: relative;
+}
+h2.modal-tickets {
+    text-align: center;
+    margin: 10px 0px;
+}
+.header-modal {
+    padding: 40px 16px;
+    background-color:#009688;
+    color: #fff
+    
+}
+.modal-chu{
+    margin-left: 12px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+.close {
+    padding: 13px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+} 
+.close:hover{
+opacity: 0.8;
+}
+.many{
+    display: block;
+    padding: 8px 0px;
+    width: 100%;
+}
+.email{
+    display: block;
+    width: 100%;
+    padding:8px 0px;
+}
+.body-modal{
+    padding: 0px 24px;
+}
+.text-modal{
+    margin: 15px 0px;
+    display: block;
+}
+.button-modal{
+    width: 100%;
+    padding: 15px 0px;
+    background-color:#009688;
+    border: 0px;
+    cursor: pointer;
+    margin: 15px 0px;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.button-modal:hover{
+    background-color:#ccc ;
+    color: #000;
+}
+.footer-modal{
+    float: right;
+    margin: 15px 0px;
+}
+.footer-modal a{
+    color: rgb(75, 75, 243);
+
+}
+.container-modal.open{
+    display: flex;
+}
+@keyframes chuyendong{
+    from{
+        opacity: 0.1;
+       transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#content .noidung3{
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    background-color: #fff;
+}
+#content .contact1{
+    width: 50%;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+#content .contact1 p{
+    font-size: 18px;
+}
+#content .contact1 a{
+opacity: 0.9;
+}
+#content .contact1 a:hover{
+    color: #0082f5;
+}
+#content .contact2{
+    width: 50%;
+    margin-bottom: 16px;
+}
+#content .box-contact{
+    padding: 32px 0px;
+    width: 100%;
+    display: flex;
+}
+#content .contact p{
+    float: left;
+}
+#content .box-contact .icon-ct{
+    width: 30px;
+    height: 18px;
+}
+.box-contact::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.input1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pd-8{
+    padding: 0px 8px !important;
+}
+.d-inlineblock{
+    display: inline-block;
+}
+.col-2{
+    width: 50%;
+}
+.fl-left{
+    float: left;
+}
+#content .input1 {
+    margin-left: -8px;
+    margin-right: -13px;
+}
+#content .input2 .form-control{
+    width: 100%;
+}
+#content .box-contact .form-control{
+    padding: 8px;
+    border: 1px solid #ccc!important;
+    
+}
+#content .button-contact{
+    padding: 8px 16px;
+    float: right;
+    margin: 16px 0px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+   
+}
+#content .button-contact:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.vungnoidung4 img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+    vertical-align: middle;
+}
+.footer{  
+    background-color:#f1f1f1;
+   padding: 70px 16px;
+}
+.footer .icon-mxh{
+    font-size: 25px;
+    text-align: center;
+    
+}
+.footer .icon-mxh a{
+    color: rgb(143, 138, 138);
+   
+}
+.footer .icon-mxh a:hover{
+    opacity: 0.6;
+}
+.icon-mxh::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer .p{
+    text-align: center;
+    margin: 15px 0px;
+    color: rgb(143, 138, 138);
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+
+

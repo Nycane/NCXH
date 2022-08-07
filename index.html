@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2013/07/12/18/35/alien-153542__340.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css1.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media (max-width:47.9375em){
+        #menu > ul > li{
+            display: block;
+        }
+        #menu{
+           overflow: hidden;
+        }
+        .button{
+            display: none;
+        }
+        #menu ul {
+             display:block;
+                }
+        #menu .bars{
+            display: block;
+           }
+           #content .card-group {
+            display: flex;
+            flex-direction: column;
+        }
+        #content .card {
+            width: 100%;
+        }
+        #content .box-contact {
+           flex-direction: column;
+        }
+          #content .khunganh {
+            flex-direction: column;
+        }
+        #content .khunganh .anh1 {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        #content .contact1 {
+                width: 100%;
+            
+            }
+            #content .contact2 {
+                width: 100%;
+            
+            }
+            .col-full-width{
+                width: 100%;
+            }
+            .input2{
+                margin-right: -5px;
+            }  
+            #nav_son:checked ~ .nav-menu{
+                position: initial;
+                }
+                #menu .nav-menu{ 
+                background-color: rgb(219, 160, 160);
+            }
+            #content .button-contact {
+                width: 100%;
+            }
+            #content .button{
+                width: 100%;
+            }
+            #content .box-contact .form-control {
+                padding: 11px;
+                font-size: 16px;
+            }
+            #content .contact1 {  
+                margin-bottom: 40px;
+            }
+        }
+        /* tablet va mobile */
+        @media (max-width:63.9375em) {
+            #content .contact1 {
+                line-height: 2;
+            }
+            #content .button-contact {
+            padding: 12px 16px;
+          }
+          #content .button {
+            padding: 12px 18px;
+        }
+        .footer .icon-mxh a{
+           
+            padding: 10px 10px;
+            font-size: 30px;
+        }
+            .footer .p a{
+            padding: 10px 0px;
+            display: inline-block;
+            }
+        }
+        /*  */
+        @media (max-width:63.9375em) and (min-width:48em) {
+            .input2{
+                margin-right: -8px;
+            } 
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container-flud">
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a id="lista" href="#band">Band</a></li>
+                <li><a id="lista" href="#tour">Tour</a></li>
+                <li><a id="lista" href="#contact">Contact</a></li>
+                <li>
+                    <label class="lb" for="nav_son">More
+                        <span class="fa fa-caret-down"></span>
+                    </label>                  
+                    <input type="checkbox"id="nav_son">
+                    <ul class="nav-menu">
+                        <li><a id="lista" href="#">Merchandise</a></li>
+                        <li><a id="lista" href="#">Extras</a></li>
+                        <li><a id="lista" href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="button">
+                <i class="icon fa fa-search"></i>
+            </div>
+            <div id="menu_bars" class="bars">
+               <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div id="header">
+                <div class="chu">
+                    <h3>New York</h3>
+                    <p>We had the best time playing at Venice Beach!</p>
+                </div>
+        </div>
+        <div id="content">
+                <div id="band" class="noidung1">
+                    <div class="noidungchu">
+                        <h2 class="h2">
+                            THE BAND
+                        </h2>
+                        <p class="chunghien"><i >We love music</i></p>
+                        <p class="noidungchinh">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>    
+                    <div class="khunganh">
+                        <div class="anh1">
+                            <p class="tieude">Name </p>
+                            <img src="../NCXH_Tkb_1/anh/bandmember.jpg" alt="">
+                        </div>
+                        <div class="anh1">
+                            <p class="tieude">Name </p>
+                            <img src="../NCXH_Tkb_1/anh/bandmember.jpg" alt="">
+                        </div>
+                        <div class="anh1">
+                            <p class="tieude">Name </p>
+                            <img src="../NCXH_Tkb_1/anh/bandmember.jpg" alt="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <div id="tour" class="noidung2">
+                        <div class="noidungchu">
+                            <h2 class="h2 text-white">
+                                TOUR DATES
+                            </h2>
+                            <p class="chunghien text-white"><i >Remember to book your tickets!</i></p>
+                        </div> 
+                        <ul class="thang">
+                            <li>September 
+                                <span class="do">Sold out</span>
+                            </li>
+                            <li>October 
+                                <span class="do">Sold out</span>
+                            </li>
+                            <li>November 
+                                <span class="den">3</span>
+                            </li>
+                        </ul>  
+                         <div class="card-group">
+                            <div class="card">
+               
+                                    <img src="../NCXH_Tkb_1/anh/newyork.jpg" alt="">
+                                
+                                <div class="card-body">
+                                    <div><h4 class="tieude">New York</h4></div>                 
+                                    <div class="time">Fri 27 Nov 2016</div>
+                                    <div class="text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                   <button class="button js-button"  >Buy Tickets</button> 
+                                </div>
+                            </div>
+                            <div class="card">                              
+                          <img src="../NCXH_Tkb_1/anh/paris.jpg" alt="">              
+                                <div class="card-body">
+                                    <h4 class="tieude">Paris</h4>
+                                    <div class="time">Sat 28 Nov 2016</div>
+                                    <div class="text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                   <button class="button js-button" >Buy Tickets</button> 
+                                </div>
+                            </div>
+                            <div class="card">
+                                
+                                    <img src="../NCXH_Tkb_1/anh/sanfran.jpg" alt="">
+                            
+                                <div class="card-body">
+                                    <h4 class="tieude">San Francisco</h4>
+                                    <div class="time">Sun 29 Nov 2016</div>
+                                    <div class="text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                   <button class="button js-button" >Buy Tickets</button> 
+                                </div>
+                            </div>
+                            <div class="clear"> </div>
+                        </div>
+                        
+                        </div> 
+                </div>
+                <div id="contact" class="noidung3">
+                    <div class="noidungchu">
+                        <h2 class="h2 ">
+                            CONTACT
+                        </h2>
+                        <p class="chunghien "><i >Fan? Drop a note!</i></p>
+                    </div> 
+                    <div class="box-contact">                  
+                        <div class="contact1">
+                        
+                            <p><span class="icon-ct fa fa-map-marker"></span>Chicago, US</p>
+                           <p><span class="icon-ct fa fa-phone"></span>Phone:<a href="tel:00151515">+00 151515</a> </p>
+                            <p><span class="icon-ct fa fa-envelope"></span>Email:<a href="mailto:mail@mail.com">mail@mail.com</a> </p>
+                           
+                            
+                        </div>
+                        <div class="contact2">
+                            <form action="">
+                            <div class="input1">
+                                <div class="col-2 fl-left pd-8 mb-16 col-full-width">
+                                    <input class="form-control col-full-width" type="text" placeholder="Name" required>
+                                </div>
+                                <div class="col-2 fl-left pd-8 mb-16 col-full-width">
+                                    <input class="form-control col-full-width" type="text" placeholder="Email" required> 
+                                </div>            
+                            </div>
+                          <div class="input2  ">
+                            <input class="form-control " type="text" placeholder="Message" required>
+                          </div>
+                          <button class="button-contact" type="submit">Send</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="vungnoidung4">
+                    <img src="../NCXH_Tkb_1/anh/map.jpg" alt="">
+                </div>
+                <div class="footer">
+                    <div class="icon-mxh">
+                        <a href=""><i class="fa fa-facebook-official"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i ></a>
+                       <a href=""><i class="fa fa-snapchat"></i ></a>
+                       <a href=""><i class="fa fa-pinterest-p"></i ></a>
+                       <a href=""><i class="fa fa-twitter"></i></a>
+                       <a href><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <p class="p">Powered by <a href class="p">w3c.ss</a></p>
+           
+        </div>
+        </div>
+        
+        <div class="container-modal">
+            <div class="modal js-modal">
+                <div class="header-modal">
+                    <span  class="close js-close">X</span>
+                    <h2 class="modal-tickets"> <i class=" fa fa-suitcase"></i> <span  class="modal-chu">Tickest</span> </h2>
+                </div>
+                <div class="body-modal">
+                    <label class="many" for="many">
+                        <span class="text-modal">
+                        <span class=" fa fa-user">
+                        </span>
+                        Tickets, $15 per person
+                    </span>
+                        
+                       <input class="many"  id="many" type="text" placeholder="How many?">
+                    </label>
+                    <label class="email" for="email">
+                        <span class="text-modal">
+                        <span class="fa fa-shopping-cart"></span>
+                        Send To</span>
+                        
+                        <input class="email"  id="email" type="text" placeholder="Enter email">
+                     </label>
+                     <button class="button-modal" type="button">Pay
+                        <i class="fa fa-check"></i>
+                     </button>
+                     <div class="footer-modal">
+                        <p>Need <a href="#">help?</a></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                
+           </div>
+        </div>
+      
+    
+    <script>
+        const buttons =document.querySelectorAll(".js-button")
+        const modal =document.querySelector(".container-modal")
+        const close=document.querySelector(".js-close")
+        const stop=document.querySelector(".js-modal")
+        for(const button of buttons){
+            button.addEventListener("click",function(){
+                    modal.classList.add("open")              
+            })
+        }
+        close.addEventListener("click",function(){
+            modal.classList.remove("open")
+        })
+       modal.addEventListener("click",function(){
+        modal.classList.remove("open")
+       })
+       stop.addEventListener("click", function(event){
+        event.stopPropagation()
+       })
+
+
+        var menu=document.getElementById("menu");
+        var bars=document.getElementById("menu_bars");
+        var current=menu.clientHeight;
+        
+            bars.onclick = function () {
+               var height= menu.clientHeight
+               if(height===current){
+                    menu.style.height="auto"
+               }
+               else if(height!=current){
+                     menu.style.height=null
+               }
+            }
+           
+         var lists=document.querySelectorAll("#lista")  
+            for(var list=0; list < lists.length;list++){
+                lists[list].onclick = function(){                  
+                        menu.style.height=null       
+                }
+            }
+          
+    </script>
+    
+</body>
+</html>
